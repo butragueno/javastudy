@@ -34,9 +34,9 @@ class Data_type{
 //        int i2=0x10;
 //        int i3=0b1000000000;
 //        System.out.println(i3);
-//        float f1=3.14f;
-//        double f2=2.0e10;
-//        System.out.println(f2);
+        float f1=3.144f;
+        double f2=2.004;
+        System.out.println(f1);
 //        boolean b1= (5<3);
 //        if (!b1){
 //            System.out.println(b1);
@@ -44,10 +44,10 @@ class Data_type{
 //        char c1='a';
 //        char c2='靠';
 //        System.out.println(c2);
-        String s1="hello";{
-        System.out.println(s1);}
-        final double PI = 3.14;
-        System.out.println(PI);
+//        String s1="hello";{
+//        System.out.println(s1);}
+//        final double PI = 3.14;
+//        System.out.println(PI);
 
     }
 }
