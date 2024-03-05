@@ -4,7 +4,7 @@ public class Methods {
         Person ming = new Person();
         ming.test();
 //        var g1 = new Group();
-        var p1=new Group();
+        Group p1=new Group();
         p1.test();
     }
 }
