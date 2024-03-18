@@ -4,7 +4,6 @@ public class ResourceResolver {
     public ResourceResolver(String basePackage) {
         this.basePackage = basePackage;
     }
-
 }
 class run{
 //    public run(){
