@@ -1,7 +1,7 @@
 public class ArrayType {
     public static void main(String[] args){
-//        var a = new Array1();
-        var sa1 = new StringArray1();
+//        Array1 a = new Array1();
+        StringArray1 sa1 = new StringArray1();
     }
 }
 

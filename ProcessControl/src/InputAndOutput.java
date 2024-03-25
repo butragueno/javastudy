@@ -4,7 +4,7 @@ public class InputAndOutput {
     public static void main(String[] args){
 //        var o1= new Output1();
 //        var i1= new Input1();
-        var p1= new practice();
+        practice p1= new practice();
     }
 }
 

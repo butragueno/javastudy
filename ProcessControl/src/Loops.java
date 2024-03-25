@@ -3,7 +3,7 @@ public class Loops {
 //        var w1 = new While1();
 //        w1.while_practice();
 //        var dw=new DoWhile1();
-        var f1=new For1();
+        For1 f1=new For1();
     }
 }
 

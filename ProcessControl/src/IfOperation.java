@@ -1,7 +1,7 @@
 public class IfOperation {
     public static void main(String[] args){
 //        ifcondition();
-        var d1 = new DetermineRef();
+        DetermineRef d1 = new DetermineRef();
 
     }
     static void ifcondition(){

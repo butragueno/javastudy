@@ -1,8 +1,8 @@
 public class CharAndString {
     public static void  main(String[] args){
-        var c = new Chars();
-        var s = new Strings();
-        var p = new Practice();
+        Chars c = new Chars();
+        Strings s = new Strings();
+        Practice p = new Practice();
     }
 }
 
@@ -22,11 +22,11 @@ class Strings{
         float f1=4.44f;
 //        System.out.println(s1+s2+i1+f1);
 //        System.out.println(i1+f1+s1+f1);
-        String s3= """
-                SELECT * FROM
-                users
-                WHERE id > 100
-                ORDER BY name DESC""";
+        String s3=
+                "SELECT * FROM" +
+                "users" +
+                "WHERE id > 100" +
+                "ORDER BY name DESC";
         System.out.println(s3);
         System.out.println("finished");
 

@@ -1,6 +1,6 @@
 public class Operations {
     public static void main(String[] args){
-        var intops=new IntOps();
+        IntOps intops=new IntOps();
     }
 }
 
