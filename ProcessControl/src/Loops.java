@@ -1,8 +1,8 @@
+
 public class Loops {
     public static void main(String[] args){
-//        var w1 = new While1();
-//        w1.while_practice();
-//        var dw=new DoWhile1();
+//        While1 w1 = new While1();
+//        DoWhile1 dw=new DoWhile1();
         For1 f1=new For1();
     }
 }
@@ -10,6 +10,7 @@ public class Loops {
 class While1{
     While1(){
         while_test1();
+        while_practice();
     }
     void while_test1(){
         int sum=0;
@@ -36,11 +37,24 @@ class While1{
 class DoWhile1{
     DoWhile1(){
         int sum = 0;
-        int n = 1;
+        int n = 0;
         do{
-            sum+=n;
             n++;
-        }while (n<=100);
+            sum+=n;
+        }while (n<100);
+        System.out.println(sum);
+        practice();
+
+    }
+    void practice(){
+        int sum = 0;
+        int m = 20;
+        int n = 100;
+        // 使用do while计算M+...+N:
+        do {
+            sum+=m;
+            m++;
+        } while (m<=n);
         System.out.println(sum);
     }
 }
@@ -48,7 +62,7 @@ class DoWhile1{
 class For1{
     For1(){
         int sum=0;
-        for (int i=1;i<=100;i++){
+        for (int i=1;i<=100;++i){
             sum+=i;
         }
 //        System.out.println(sum);
@@ -90,14 +104,19 @@ class For1{
     }
     void practice3(){
         double pi = 0;
-        for (int i=1;i<=100000;i++) {
-            double p=-1;
-            double q=-1;
-            for (int n=1;n<=i;n++){
-                p=p*-1;
-                q=q+2;
-            }
-            pi = pi + (1 / q*p);
+//        for (int i=1;i<=100000;i++) {
+//            double p=-1;
+//            double q=-1;
+//            for (int n=1;n<=i;n++){
+//                p=p*-1;
+//                q=q+2;
+//            }
+//            pi = pi + (1 / q*p);
+//        }
+        for (int i=1;i<=20;i+=2){
+            int b = i/2+1;
+            System.out.println(b);
+
         }
         System.out.println(pi*4);
     }

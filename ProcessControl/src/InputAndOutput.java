@@ -2,15 +2,15 @@ import java.util.Scanner;
 
 public class InputAndOutput {
     public static void main(String[] args){
-//        var o1= new Output1();
-//        var i1= new Input1();
-        practice p1= new practice();
+        Output1 o1= new Output1();
+//        Input1 i1= new Input1();
+//        practice p1= new practice();
     }
 }
 
 class Output1{
     Output1(){
-//        f1();
+        f1();
         f2();
 
     }
@@ -22,15 +22,22 @@ class Output1{
         System.out.println("END");
     }
     void f2(){
-        double d = 12900000;
-        System.out.println(d); // 1.29E7
-        d = 3.1415926;
-        System.out.printf("%.2f\n",d);
-        System.out.printf("%f\n",d);
-        System.out.printf("%08f\n",d);
+        double d1 = 12900000;
+        System.out.println(d1); // 1.29E7
+        //如果要把数据显示成我们期望的格式，就需要使用格式化输出的功能
+        d1 = 3.1415926;
+        System.out.printf("%.2f\n",d1);
+        System.out.printf("%f\n",d1);
+        System.out.printf("%08f\n",d1);
 
-        int n = 12345000;
-        System.out.printf("n=%d, hex=%08x", n, n); // 注意，两个%占位符必须传入两个数
+        int i1 = 12345;
+        float f1 = 3.1415f;
+        String s1=""+"Fuck you all the day";
+        System.out.printf("n=%08d, hex=%x", i1, i1); // 注意，两个%占位符必须传入两个数
+        System.out.println();
+        System.out.printf(s1+" and night\ndouble: %f\n",f1);
+        System.out.printf("格式化输出科学计数法表示的浮点数: %e\n",d1);
+
     }
 }
 
