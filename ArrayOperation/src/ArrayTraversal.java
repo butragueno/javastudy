@@ -2,10 +2,22 @@ import java.util.Arrays;
 
 public class ArrayTraversal {
     public static void main(String[] args) {
-        to_string();
-        practice1();
+        String[] ss = new String[10];
+        ss[0]="a";
+        ss[1]="c";
+        System.out.println(Arrays.toString(ss));
+        for (int i = 0;i<ss.length;i++){
+            if (null==ss[i]){
+                ss[i]="b";
+                break;
+            }
+        }
+        System.out.println(Arrays.toString(ss));
+//        to_string();
+//        practice1();
     }
     static void to_string(){
+
         int[] ns = { 1, 1, 2, 3, 5, 8 };
         System.out.println(Arrays.toString(ns));
     }

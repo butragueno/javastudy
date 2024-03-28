@@ -10,10 +10,15 @@ public class MultiDimensionalArray {
         int[] new_ns={ 1, 2, 3, 4 };
         int[][] nss = new int[3][5];
         nss[1]=new_ns;
+        nss[2]=new int[]{1,2,3};
+        int[][][] nsss= new int[2][3][5];
+        nsss[0]=nss;
+        nsss[1]=new int[][]{{200,300},{45,65}};
         System.out.println(Arrays.deepToString(nss));
-        for (int[] ns:nss){
-            System.out.println(Arrays.toString(ns));
-        }
+        System.out.println(Arrays.deepToString(nsss));
+//        for (int[] ns:nss){
+//            System.out.println(Arrays.toString(ns));
+//        }
         practice();
     }
     static void practice(){
