@@ -29,7 +29,6 @@ public class MultiDimensionalArray {
                 { 67, 52, 60 },
                 { 79, 81, 85 },
         };
-        // TODO:
         double average = 0;
         int len=0;
         for(int[] score:scores){
